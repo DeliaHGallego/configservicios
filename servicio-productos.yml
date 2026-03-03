@@ -11,7 +11,9 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://192.168.1.19:8761/eureka  #http://localhost:8761/eureka  192.168.1.19 || 22.22.0.54
+    instance:
+      prefer-ip-address: true #si no pongo esto error de DNS al ir con http://localhost...., incluso en el postman tambien
 server:
   port: 8000 
 springdoc:
