@@ -3,7 +3,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     #cambio hecho para poder construir un contenedor
     #url: jdbc:mysql://localhost:3306/curso?serverTimezone=UTC
-    url: jdbc:mysql://192.168.1.19:3306/curso?serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1:3306/curso?serverTimezone=UTC
     username: root
     password: Admin
     #propiedades para que hibernate cree adecuadamente las instrucciones SQL
