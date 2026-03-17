@@ -15,7 +15,7 @@ spring:
         implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 server:
-  port: 8500
+  port: 8095
 springdoc:
   packages-to-scan:
   - com.cursos.securizados.controller
@@ -31,3 +31,5 @@ eureka:
     instance-id: instanciaCursos3 #instanciaCursos1 || instanciaCursos2
     #instance-id: ${spring.application.name}:instanciaCursos:${random.value}
     prefer-ip-address: true #si no pongo esto error de DNS al ir con http://localhost...., incluso en el postman tambien
+    hostname: 192.168.239.1
+    non-secure-port: 8095
